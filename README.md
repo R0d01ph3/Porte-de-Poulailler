@@ -1,5 +1,21 @@
 # Porte de poulailler
 
+## Fonctionnement
+Pour fixer l'heure sur la rtc : https://github.com/NorthernWidget/DS3231
+
+En fonction de la date et l'heure la porte du poulailer s'ouvre et se ferme.
+
+La porte est un systeme pont levis avec une poulie
+
+Pour la fermeture le moteur s'enclenche pour enrouler le fil.  
+Dés que la porte touche le capteur de fin de course (positionné sur la butée de la porte) il doit s'arreter.  
+Finalement j'ai choisi de lancer une premiere fermeture puis ouvrir pendant une seconde et relancer une fermeture.  
+Ceci car je me suis rendu compte que parfois la porte se bloquait un peu avant le capteur de fin de course.  
+
+Pour l'ouverture j'avais mis le même systeme que la fermeture avec le capteur de butée sous la porte.  
+Mais comme les poules marchent régulièrement sur la porte le capteur a fini par se casser et il était détecté tout le temps ouvert.  
+J'ai donc utilisée une tempo (mesure du temps moyen d'ouverture de la porte plus petite rallonge de fil de pêche) pour faire l'ouverture.  
+
 ## requirements
 Logiciel
 - arduino pour coder et téléverser sur l'arduino
@@ -23,22 +39,6 @@ Librairies
 - charniere pour la porte
 - crochet pour relier le fil au moteur
 - une boite de derivation pour mettre tous les composants à l'abri de la pluie et des poules
-
-## Fonctionnement
-Pour fixer l'heure sur la rtc : https://github.com/NorthernWidget/DS3231
-
-En fonction de la date et l'heure la porte du poulailer s'ouvre et se ferme.
-
-La porte est un systeme pont levis avec une poulie
-
-Pour la fermeture le moteur s'enclenche pour enrouler le fil.  
-Dés que la porte touche le capteur de fin de course (positionné sur la butée de la porte) il doit s'arreter.  
-Finalement j'ai choisi de lancer une premiere fermeture puis ouvrir pendant une seconde et relancer une fermeture.  
-Ceci car je me suis rendu compte que parfois la porte se bloquait un peu avant le capteur de fin de course.  
-
-Pour l'ouverture j'avais mis le même systeme que la fermeture avec le capteur de butée sous la porte.  
-Mais comme les poules marchent régulièrement sur la porte le capteur a fini par se casser et il était détecté tout le temps ouvert.  
-J'ai donc utilisée une tempo (mesure du temps moyen d'ouverture de la porte plus petite rallonge de fil de pêche) pour faire l'ouverture.  
 
 ## Cablage
 Voir fritzing ou image
