@@ -25,6 +25,8 @@ Librairies
 - une boite de derivation pour mettre tous les composants à l'abri de la pluie et des poules
 
 ## Fonctionnement
+Pour fixer l'heure sur la rtc : https://github.com/NorthernWidget/DS3231
+
 En fonction de la date et l'heure la porte du poulailer s'ouvre et se ferme.
 
 La porte est un systeme pont levis avec une poulie
