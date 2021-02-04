@@ -46,6 +46,9 @@ Voir fritzing ou image
 ## Code
 Voir fichier .ino
 
+## Amélioration
+remplacer les boutons poussoirs par un module wifi ESP8266 flashé tasmota pour pouvoir piloter la porte via un smartphone
+
 ## Sources
 Je me suis inspiré de beaucoup de sites différents.  
 J'en oublies surement beaucoup mais voilà quelques sources :
