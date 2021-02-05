@@ -48,6 +48,7 @@ Voir fichier .ino
 
 ## Amélioration
 remplacer les boutons poussoirs par un module wifi ESP8266 flashé tasmota pour pouvoir piloter la porte via un smartphone
+cf https://github.com/R0d01ph3/Porte-Poulailler-wifi
 
 ## Sources
 Je me suis inspiré de beaucoup de sites différents.  
