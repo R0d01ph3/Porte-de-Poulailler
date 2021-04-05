@@ -25,7 +25,7 @@ boolean mem_h = false, mem_b = false, mem_fdch = false; // Déclaration des mém
 // janvier du 01 au 15 correspond a l'index 0, janvier du 16 au 31 correspond à l'index 1
 // décembre du 01 au 15 correspond a l'index 1, décembre du 16 au 30 correspond a l'index 0
 // ...
-int LeveSoleilHeure[12]= {7,7, 7,7, 6,6, 6,6, 6,6, 6,6 };   
+int LeveSoleilHeure[12]= {7,7, 7,7, 6,6, 5,5, 5,5, 5,5 };   
 int LeveSoleilMinute[12]= {15,15, 0,0, 45,45, 30,30, 15,15, 0,0 };   
 int CoucheSoleilHeure[12]= {19,19, 19,19, 20,20, 20,20, 21,21, 21,21 };   
 int CoucheSoleilMinute[12]={15,15, 30,30, 0,0, 30,30, 0,0, 30,30 }; 
